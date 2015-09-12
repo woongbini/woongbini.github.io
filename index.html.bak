@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		  <meta charset="utf-8">
-		<title>woongbini</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Blog Template</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -13,8 +13,6 @@
 		<![endif]-->
 		<link href="css/styles.css" rel="stylesheet">
 	</head>
-
-  <!--------------body--------------- -->
 	<body>
 <header class="navbar navbar-default navbar-fixed-top" role="banner">
   <div class="container">
@@ -60,8 +58,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1>Personal Blog
-          <p class="lead">everyting is in here about me</p>
+        <h1>Blog
+          <p class="lead">Catchy Subtitle Here</p>
         </h1>
       </div>
       <div class="col-md-5">
@@ -96,7 +94,7 @@
               <a class="story-img" href="#"><img src="//placehold.it/100" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
-              <h3>posting #1</h3>
+              <h3>Post Entry Title</h3>
               <div class="row">
                 <div class="col-xs-9">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
@@ -120,7 +118,7 @@
               <a class="story-img" href="#"><img src="//placehold.it/100" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
-              <h3>posting #2</h3>
+              <h3>Story Title Here</h3>
               <div class="row">
                 <div class="col-xs-9">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
@@ -144,7 +142,7 @@
               <a class="story-img" href="#"><img src="//placehold.it/100" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
-              <h3>posting #3</h3>
+              <h3>Post Heading Here</h3>
               <div class="row">
                 <div class="col-xs-9">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
@@ -168,7 +166,7 @@
               <a class="story-img" href="#"><img src="//placehold.it/100" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
-              <h3>posting #4</h3>
+              <h3>Another Entry Title</h3>
               <div class="row">
                 <div class="col-xs-9">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
@@ -207,10 +205,10 @@
   <div class="row">
     <div class="col col-sm-12">
       
-      <h1>Follow Me</h1>
+      <h1>Follow Us</h1>
       <div class="btn-group">
        <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
-	   <a class="btn btn-facebook btn-lg" href="http://www.facebook.com/woongbini"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
 	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
       </div>
       
