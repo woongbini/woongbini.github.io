@@ -1,2 +1,2 @@
 # woongbini.github.io
-for githubpages
+for personal pages
