@@ -1,4 +1,4 @@
-.nav {position: fixed; top: 0px; left: 0px;}
+
 .nav a {
   color: #5a5a5a;
   font-size: 11px;
@@ -14,8 +14,8 @@
 
 .jumbotron {
   background-image:url('https://goo.gl/oqjtBf');
-  height: 400px;
-  background-repeat: no-repeat;
+  height: 450px;
+  background-repeat: repeat;
   background-size: cover;
 
 
@@ -64,3 +64,4 @@
 .neighborhood-guides p {
  font-size : 15px; margin-bottom : 13px;   
 }
+
