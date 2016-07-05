@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="kr">
 <head>
-	<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
-	<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 	<title>Woongbini</title>
 </head>
 <body>
+	<!-- navi-bar start -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid" >
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span>
+				</button>
+				<a href="/"><div class=logoimage></div></a>
+			</div>
+			<div class="navbar-collapse collapse basicfont2" id="myNavbar" style="">
+				<ul class="nav navbar-nav navbar-left">
+					<li class="active"><a href="#section1" class="scroll"><strong class="toolbarcolor">About Me</strong></a></li>
+					<li><a href="#section2" class="scroll"><strong class="toolbarcolor">Big Data</strong></a></li>
+					<li><a href="#section3" class="scroll"><strong class="toolbarcolor">Capston Des.</strong></a></li>
+					<li><a href="#section4" class="scroll"><strong class="toolbarcolor">Furthermore</strong></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<!--우측에 들어갈 것들 -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- navi-bar end -->
+	<!--
 	<div class="nav">
 		<div class="container">
 			<div class ="col-md-6">
@@ -24,7 +54,7 @@
 			</div>
 		</div>
 	</div>
-		
+	-->	
 	<div class="jumbotron">
 		<div class="container">
 			<h1>Woongbini's Blog</h1>
@@ -84,6 +114,18 @@
 			</div>
 		</div>
 	</div>
-	
+
+<!-- jquery스크롤 coding start -->
+	<script>
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop : $(this.hash).offset().top
+				}, 500);
+			});
+		});
+	</script>
+<!-- jquery스크롤 coding end -->	
 </body>
 </html>
