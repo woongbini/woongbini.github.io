@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="kr">
 <head>
+	<title>Woongbini's</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--bootstrap & js CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<link rel="stylesheet" href="css/main.css">
-	<title>Woongbini</title>
+		<!--bootstrap & js CDN -->
 </head>
-<body>
-	<!-- navi-bar start -->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- navi-bar start -->
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid" >
 			<div class="navbar-header">
@@ -20,50 +23,40 @@
 					<span class="icon-bar"></span> 
 					<span class="icon-bar"></span>
 				</button>
-				<a href="/"><div class=logoimage></div></a>
 			</div>
 			<div class="navbar-collapse collapse basicfont2" id="myNavbar" style="">
 				<ul class="nav navbar-nav navbar-left">
-					<li class="active"><a href="#section1" class="scroll"><strong class="toolbarcolor">About Me</strong></a></li>
-					<li><a href="#section2" class="scroll"><strong class="toolbarcolor">Big Data</strong></a></li>
-					<li><a href="#section3" class="scroll"><strong class="toolbarcolor">Capston Des.</strong></a></li>
-					<li><a href="#section4" class="scroll"><strong class="toolbarcolor">Furthermore</strong></a></li>
+					<li class="active"><a href="#section1" class="scroll"><strong> About Me </strong></a></li>
+					<li><a href="#section2" class="scroll"><strong> Big Data </strong></a></li>
+					<li><a href="#section3" class="scroll"><strong> Capston Des. </strong></a></li>
+					<li><a href="#section4" class="scroll"><strong> Furthermore </strong></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<!--우측에 들어갈 것들 -->
+					<li><a href="http://www.facebook.com/woongbini">
+						<img src="img/social_facebook_square.png" style="width:20px">
+					</a></li>
+					<li><a href="http://www.instagram.com/woongbini">
+						<img src="img/social_instagram_square.png" style="width:20px">
+					</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<!-- navi-bar end -->
-	<!--
-	<div class="nav">
+<!-- navi-bar end -->
+
+<!-- 사진과 나에 대한 소개가 들어가는 jumbotron START-->
+	<div class="jumbotron" id="section1">
 		<div class="container">
-			<div class ="col-md-6">
-				<ul class = "pull-left">
-					<li><a href="#">Name</a></li>
-					<li><a href="#">Browse</a></li>
-				</ul>
-			</div>
-			<div class= "col-md-6">
-				<ul class = "pull-right">
-					<li>Contact me</li>
-					<li><a href="http://www.facebook.com/woongbini"><img src="img/social_facebook_square.png"></a></li>
-					<li><a href="http://www.instagram.com/woongbini"><img src="img/social_instagram_square.png"></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	-->	
-	<div class="jumbotron">
-		<div class="container">
-			<h1>Woongbini's Blog</h1>
+			<h1>Woongbini's</h1>
 			<p>everything is in here about me.</p>
 			<a href="#">Learn More</a>
 		</div>
 	</div> 
-		
-	<div class="neighborhood-guides">
+<!-- 사진과 나에 대한 소개가 들어가는 jumbotron END-->	
+
+<!-- 첫번째 프로젝트 소개 START -->
+	<div class="neighborhood-guides" id="section2">
 		<div class="container">
 			<h2>History Guides</h2>
 			<p>Not sure where to stay?</p>
@@ -89,11 +82,14 @@
 						<img src = "https://goo.gl/obfuuU">
 					</div>
 				</div>
+				<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
 			</div>
 		</div>
 	</div>
-	
-	<div class="learn-more">
+<!-- 첫번째 프로젝트 소개 END -->
+
+<!-- 두번째 프로젝트 소개 START -->
+	<div class="learn-more" id="section3">
 		<div class="container">
 			<div class = "row">
 				<div class = "col-md-4">
@@ -111,19 +107,21 @@
 					<p>From Verified ID to our worldwide customer support team, we've got your back.</p>
 					<p><a href="#">Learn about trust at Airbnb</a></p>
 				</div>
+				<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
 			</div>
 		</div>
 	</div>
 
 <!-- jquery스크롤 coding start -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script>
 		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event) {
-				event.preventDefault();
-				$('html,body').animate({
-					scrollTop : $(this.hash).offset().top
-				}, 500);
-			});
+				$(".scroll").click(function(event) {
+					event.preventDefault();
+					$('html,body').animate({
+							scrollTop : $(this.hash).offset().top
+					}, 500);
+				});
 		});
 	</script>
 <!-- jquery스크롤 coding end -->	
